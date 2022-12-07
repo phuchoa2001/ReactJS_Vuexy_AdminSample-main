@@ -1,0 +1,79 @@
+.contact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ebe9f1;
+  border-radius: 0.428rem;
+  &-left {
+    width: 260px;
+    &-title {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    &-icon {
+      margin-right: 10px;
+    }
+  }
+  &-right {
+    flex: 1;
+    &-title {
+      margin-bottom: 10px;
+    }
+    &-action button {
+      margin-right: 10px;
+    }
+  }
+  &-left,
+  &-right {
+    background-color: #fff;
+    height: inherit;
+    border: 1px solid #ebe9f1;
+    padding: 12px;
+    overflow-y: auto;
+  }
+}
+
+.columns {
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  &-image {
+    padding: 12px;
+    background: #4caf50;
+    margin: 4px 0px;
+    margin-right: 4px;
+  }
+  &-text,
+  &-footer {
+    font-size: 16px;
+  }
+  &-footer {
+    margin-bottom: 6px;
+  }
+  &-tags {
+    display: flex;
+  }
+  &-tag {
+    padding: 4px;
+    border: 1px solid currentColor;
+    margin: 0px 4px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    &-success {
+      color: #198754;
+    }
+    &-warning {
+      color: #ffc107;
+    }
+    &-danger {
+      color: #dc3545;
+    }
+  }
+}
